@@ -1,0 +1,21 @@
+name: Deploy staging
+
+on:
+  merge:
+    branches:
+      - staging
+
+jobs:
+  deploy-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: staging
+      - name: Install
+        run: npm i
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: npm run deploy
