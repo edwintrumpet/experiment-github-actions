@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import App from './App'
+import App from './App';
 
 describe('<App />', () => {
   const app = mount(<App />);
@@ -10,6 +10,6 @@ describe('<App />', () => {
   });
 
   test('Render del título', () => {
-    expect(app.find('h1').text()).toEqual('SSH key works')
-  })
+    expect(app.find('h1').text()).toEqual('CI works again!');
+  });
 });
