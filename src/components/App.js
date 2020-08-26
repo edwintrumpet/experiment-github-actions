@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function App() {
-  return <h1>SSH key works!</h1>
+  return <h1>CI works again!</h1>;
 }
