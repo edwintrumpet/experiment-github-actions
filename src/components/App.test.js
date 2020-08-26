@@ -10,6 +10,6 @@ describe('<App />', () => {
   });
 
   test('Render del título', () => {
-    expect(app.find('h1').text()).toEqual('Changes in policy!');
+    expect(app.find('h1').text()).toEqual('Changes in app!');
   });
 });
