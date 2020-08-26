@@ -10,6 +10,6 @@ describe('<App />', () => {
   });
 
   test('Render del título', () => {
-    expect(app.find('h1').text()).toEqual('CI works again!');
+    expect(app.find('h1').text()).toEqual('Ready to production deploy!');
   });
 });
